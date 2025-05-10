@@ -1,0 +1,1 @@
+pyhton is great pyhton is built for AI machine learning and automation making , python has reduced the number of lines the code that we have to write

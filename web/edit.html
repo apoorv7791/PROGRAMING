@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        textarea {
+            flex: 1;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 16px;
+            resize: none;
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+
+        #editor-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="editor-container">
+        <textarea id="code-editor" placeholder="Write your HTML code here..."></textarea>
+        <button id="run-button">Run Code</button>
+        <div id="output"></div>
+
+        <script>
+            const editor = document.getElementById('code-editor');
+            const languageSwitcher = document.getElementById('language-switcher');
+
+            languageSwitcher.addEventListener('change', () => {
+                const language = languageSwitcher.value;
+                editor.className = `language-${language}`;
+            });
+            const preview = document.getElementById('preview');
+            const runButton = document.getElementById('run-button');
+            const output = document.getElementById('output');
+
+            editor.addEventListener('input', () => {
+                preview.srcdoc = editor.value;
+            });
+
+            runButton.addEventListener('click', () => {
+                output.innerHTML = editor.value;
+            });
+        </script>
+        <iframe id="preview" title="Preview of the code editor"></iframe>
+    </div>
+
+    <!-- Removed duplicate script block to avoid redeclaration of 'editor' -->
+</body>
+
+</html>

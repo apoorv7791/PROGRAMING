@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Script</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "hello.txt", false);
+            xhttp.send(null);
+            document.getElementById("demo").innerHTML = xhttp.responseText;
+        }
+    </script>
+
+    <p>AJAX DOCUMENT</p>
+    <div id="demo"></div>
+    <button onclick="loadDoc()">click me</button>
+</body>
+
+</html>

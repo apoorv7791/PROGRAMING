@@ -1,0 +1,2 @@
+This is another file.
+It contains some more sample text.

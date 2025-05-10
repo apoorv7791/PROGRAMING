@@ -1,0 +1,11 @@
+date,product,category,quantity,price,total_sales,region,customer_type
+2023-01-01,Laptop,Electronics,5,1200.50,6002.50,North,Retail
+2023-01-02,Smartphone,Electronics,10,800.75,8007.50,South,Wholesale
+2023-01-03,Tablet,Electronics,3,450.25,1350.75,East,Retail
+2023-01-04,Smartwatch,Electronics,7,250.00,1750.00,West,Online
+2023-01-05,Headphones,Electronics,15,120.50,1807.50,Central,Online
+2023-01-06,Monitor,Electronics,4,350.75,1403.00,North,Wholesale
+2023-01-07,Keyboard,Electronics,8,75.25,602.00,South,Retail
+2023-01-08,Mouse,Electronics,12,45.50,546.00,East,Online
+2023-01-09,Speaker,Electronics,6,180.25,1081.50,West,Retail
+2023-01-10,Printer,Electronics,2,299.99,599.98,Central,Wholesale
