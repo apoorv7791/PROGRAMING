@@ -31,3 +31,4 @@ class sub {
         System.out.println(obj.lengthOfLongestSubstring(s)); // Output: 3
     }
 }
+// technique used : Sliding window
